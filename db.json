@@ -1,0 +1,62 @@
+{
+  "patients": [
+    {
+      "id": "1",
+      "name": "John McClane",
+      "age": 32,
+      "gender": "Male",
+      "issues": [
+        "Egocentristic",
+        "Problem-solver complex"
+      ],
+      "treatments": [
+        "Aspirin"
+      ],
+      "activitiesPending": [
+        {
+          "name": "Jump over glasses",
+          "duration": 4,
+          "description": "Jump over glasses without shoes"
+        },
+        {
+          "name": "Talk over a walkie talkie with the police",
+          "duration": 10,
+          "description": "Try to convince the police that you're also a policeman"
+        }
+      ],
+      "activitiesDone": [
+        {
+          "name": "Sneak through the air vents",
+          "duration": 3,
+          "description": "Crawls through air vents to sneak the bad people"
+        },
+        {
+          "name": "Paint a t-shirt with blood",
+          "duration": 1,
+          "description": "Say that you now have a machine gun. Ho ho ho!"
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "patientId": 1,
+      "date": "2011-10-05",
+      "description": "Tagahashi building experience",
+      "problems": [
+        "Anxiety",
+        "God-complex"
+      ],
+      "activitiesReviewed": "Go out!",
+      "activitiesProposed": "Go out!",
+      "info-treatments": [
+        {
+          "treatment": "aspirin",
+          "date": "2011-10-04",
+          "info": "It worked well"
+        }
+      ],
+      "id": 1
+    }
+  ]
+}
