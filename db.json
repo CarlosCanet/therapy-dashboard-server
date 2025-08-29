@@ -1,62 +1,263 @@
 {
   "patients": [
-    {
-      "id": "1",
-      "name": "John McClane",
-      "age": 32,
-      "gender": "Male",
-      "issues": [
-        "Egocentristic",
-        "Problem-solver complex"
-      ],
-      "treatments": [
-        "Aspirin"
-      ],
-      "activitiesPending": [
-        {
-          "name": "Jump over glasses",
-          "duration": 4,
-          "description": "Jump over glasses without shoes"
-        },
-        {
-          "name": "Talk over a walkie talkie with the police",
-          "duration": 10,
-          "description": "Try to convince the police that you're also a policeman"
-        }
-      ],
-      "activitiesDone": [
-        {
-          "name": "Sneak through the air vents",
-          "duration": 3,
-          "description": "Crawls through air vents to sneak the bad people"
-        },
-        {
-          "name": "Paint a t-shirt with blood",
-          "duration": 1,
-          "description": "Say that you now have a machine gun. Ho ho ho!"
-        }
-      ]
-    }
+    { "id": "1", "name": "John McClane","dob": "1955-05-23","gender": "Male","issues": ["Egocentristic", "Problem-solver complex"],"treatments": [{"id": "51347","name": "Aspirin"},{"name": "IBUPROFENO (ARGININA) NORMON 400 mg GRANULADO PARA SOLUCION ORAL EFG","id": "72415"}],"activitiesPending": [{"name": "Jump over glasses","duration": 4,"description": "Jump over glasses without shoes"},{"name": "Talk over a walkie talkie with the police","duration": 10,"description": "Try to convince the police that you're also a policeman"}],"activitiesDone": [{"name": "Sneak through the air vents","duration": 3,"description": "Crawls through air vents to sneak the bad people"},{"name": "Paint a t-shirt with blood","duration": 1,"description": "Say that you now have a machine gun. Ho ho ho!"}]},
+    { "id": "2", "name": "Sherlock Holmes", "dob": "1854-01-06", "gender": "Male", "issues": ["Obsessive", "Addictive personality"], "treatments": [{ "id": "1001", "name": "Cognitive Therapy" }], "activitiesPending": [], "activitiesDone": [] },
+    { "id": "3", "name": "Hermione Granger", "dob": "1979-09-19", "gender": "Female", "issues": ["Perfectionist"], "treatments": [{ "id": "1002", "name": "Mindfulness" }], "activitiesPending": [], "activitiesDone": [] },
+    { "id": "4", "name": "Tony Stark", "dob": "1970-05-29", "gender": "Male", "issues": ["Alcoholism", "Arrogance"], "treatments": [{ "id": "1003", "name": "Rehabilitation" }], "activitiesPending": [], "activitiesDone": [] },
+    { "id": "5", "name": "Katniss Everdeen", "dob": "1990-05-08", "gender": "Female", "issues": ["PTSD"], "treatments": [{ "id": "1004", "name": "Trauma therapy" }], "activitiesPending": [], "activitiesDone": [] },
+    { "id": "6", "name": "Frodo Baggins", "dob": "2968-09-22", "gender": "Male", "issues": ["Anxiety"], "treatments": [{ "id": "1005", "name": "Support group" }], "activitiesPending": [], "activitiesDone": [] },
+    { "id": "7", "name": "Daenerys Targaryen", "dob": "284-01-05", "gender": "Female", "issues": ["Power obsession"], "treatments": [{ "id": "1006", "name": "Anger management" }], "activitiesPending": [], "activitiesDone": [] },
+    { "id": "8", "name": "Walter White", "dob": "1958-09-07", "gender": "Male", "issues": ["Narcissism", "Criminal tendencies"], "treatments": [{ "id": "1007", "name": "Behavioral therapy" }], "activitiesPending": [], "activitiesDone": [] },
+    { "id": "9", "name": "Lara Croft", "dob": "1968-02-14", "gender": "Female", "issues": ["Risk-seeking"], "treatments": [{ "id": "1008", "name": "Stress management" }], "activitiesPending": [], "activitiesDone": [] },
+    { "id": "10", "name": "Bruce Wayne", "dob": "1972-02-19", "gender": "Male", "issues": ["PTSD", "Dual identity"], "treatments": [{ "id": "1012", "name": "Therapy" }], "activitiesPending": [], "activitiesDone": [] },
+    { "id": "11", "name": "Rick Grimes", "dob": "1975-05-09", "gender": "Male", "issues": ["Leadership stress", "PTSD"], "treatments": [{ "id": "1015", "name": "Group therapy" }], "activitiesPending": [], "activitiesDone": [] },
+    { "id": "12", "name": "Arya Stark", "dob": "289-01-06", "gender": "Female", "issues": ["Vengeance obsession"], "treatments": [{ "id": "1017", "name": "Behavioral therapy" }], "activitiesPending": [], "activitiesDone": [] },
+    { "id": "13", "name": "Neo", "dob": "1971-03-11", "gender": "Male", "issues": ["Existential crisis"], "treatments": [{ "id": "1018", "name": "Philosophical counseling" }], "activitiesPending": [], "activitiesDone": [] },
+    { "id": "14", "name": "Princess Leia", "dob": "2000-05-06", "gender": "Female", "issues": ["Leadership stress"], "treatments": [{ "id": "1019", "name": "Stress management" }], "activitiesPending": [], "activitiesDone": [] }
   ],
   "sessions": [
     {
-      "patientId": 1,
-      "date": "2011-10-05",
+      "id": "0",
+      "patientId": "1",
+      "date": "2025-07-02",
       "description": "Tagahashi building experience",
-      "problems": [
-        "Anxiety",
-        "God-complex"
-      ],
-      "activitiesReviewed": "Go out!",
-      "activitiesProposed": "Go out!",
-      "info-treatments": [
-        {
-          "treatment": "aspirin",
-          "date": "2011-10-04",
-          "info": "It worked well"
-        }
-      ],
-      "id": 1
+      "problems": ["Anxiety", "God-complex"],
+      "activitiesReviewed": ["Go out!"],
+      "activitiesProposed": ["Go out!"]
+    },
+    {
+      "id": "1",
+      "patientId": "2",
+      "date": "2025-07-05",
+      "description": "Investigating unusual behavior in London",
+      "problems": ["Obsessive", "Addictive personality"],
+      "activitiesReviewed": ["Read case files", "Observe suspect"],
+      "activitiesProposed": ["Practice mindfulness", "Limit substances"]
+    },
+    {
+      "id": "2",
+      "patientId": "2",
+      "date": "2025-08-01",
+      "description": "Follow-up on prior investigations",
+      "problems": ["Obsessive tendencies"],
+      "activitiesReviewed": ["Mindfulness exercises"],
+      "activitiesProposed": ["Social interactions"]
+    },
+    {
+      "id": "3",
+      "patientId": "3",
+      "date": "2025-07-12",
+      "description": "School pressure and time management",
+      "problems": ["Perfectionist tendencies"],
+      "activitiesReviewed": ["Organized study plan"],
+      "activitiesProposed": ["Relaxation exercises"]
+    },
+    {
+      "id": "4",
+      "patientId": "4",
+      "date": "2025-07-08",
+      "description": "Business stress and alcohol use",
+      "problems": ["Alcoholism", "Arrogance"],
+      "activitiesReviewed": ["Rehabilitation steps"],
+      "activitiesProposed": ["Meditation", "Therapy"]
+    },
+    {
+      "id": "5",
+      "patientId": "4",
+      "date": "2025-08-10",
+      "description": "Follow-up on tech project stress",
+      "problems": ["Arrogance"],
+      "activitiesReviewed": ["Therapy sessions"],
+      "activitiesProposed": ["Team collaboration exercises"]
+    },
+    {
+      "id": "6",
+      "patientId": "5",
+      "date": "2025-07-22",
+      "description": "Coping with trauma from games",
+      "problems": ["PTSD"],
+      "activitiesReviewed": ["Archery practice"],
+      "activitiesProposed": ["Nature walks"]
+    },
+    {
+      "id": "7",
+      "patientId": "6",
+      "date": "2025-07-15",
+      "description": "Carrying the ring burden",
+      "problems": ["Anxiety"],
+      "activitiesReviewed": ["Journey planning"],
+      "activitiesProposed": ["Relaxation techniques"]
+    },
+    {
+      "id": "8",
+      "patientId": "6",
+      "date": "2025-08-05",
+      "description": "Interaction with friends",
+      "problems": ["Anxiety"],
+      "activitiesReviewed": ["Support group meeting"],
+      "activitiesProposed": ["Meditation exercises"]
+    },
+    {
+      "id": "9",
+      "patientId": "7",
+      "date": "2025-07-19",
+      "description": "Power control issues",
+      "problems": ["Power obsession"],
+      "activitiesReviewed": ["Dragon training"],
+      "activitiesProposed": ["Teamwork exercises"]
+    },
+    {
+      "id": "10",
+      "patientId": "8",
+      "date": "2025-07-03",
+      "description": "Coping with criminal lifestyle",
+      "problems": ["Narcissism", "Criminal tendencies"],
+      "activitiesReviewed": ["Cooking meth under control"],
+      "activitiesProposed": ["Behavioral therapy"]
+    },
+    {
+      "id": "11",
+      "patientId": "8",
+      "date": "2025-08-12",
+      "description": "Family interactions",
+      "problems": ["Narcissism"],
+      "activitiesReviewed": ["Family meeting"],
+      "activitiesProposed": ["Empathy exercises"]
+    },
+    {
+      "id": "12",
+      "patientId": "9",
+      "date": "2025-07-20",
+      "description": "Adventuring stress",
+      "problems": ["Risk-seeking"],
+      "activitiesReviewed": ["Tomb raiding"],
+      "activitiesProposed": ["Risk assessment exercises"]
+    },
+    {
+      "id": "13",
+      "patientId": "10",
+      "date": "2025-07-07",
+      "description": "Managing dual identity",
+      "problems": ["PTSD", "Dual identity"],
+      "activitiesReviewed": ["Night patrols"],
+      "activitiesProposed": ["Therapy exercises"]
+    },
+    {
+      "id": "14",
+      "patientId": "12",
+      "date": "2025-07-25",
+      "description": "Revenge planning",
+      "problems": ["Vengeance obsession"],
+      "activitiesReviewed": ["Sword training"],
+      "activitiesProposed": ["Conflict resolution exercises"]
+    },
+    {
+      "id": "15",
+      "patientId": "13",
+      "date": "2025-08-07",
+      "description": "Existential crisis coping",
+      "problems": ["Existential crisis"],
+      "activitiesReviewed": ["Matrix simulations"],
+      "activitiesProposed": ["Philosophical reflection"]
+    },
+    {
+      "id": "16",
+      "patientId": "14",
+      "date": "2025-07-18",
+      "description": "Leadership under pressure",
+      "problems": ["Leadership stress"],
+      "activitiesReviewed": ["Rebel council meetings"],
+      "activitiesProposed": ["Stress management exercises"]
+    },
+    {
+      "id": "17",
+      "patientId": "1",
+      "date": "2025-09-01",
+      "description": "",
+      "problems": [],
+      "activitiesReviewed": [],
+      "activitiesProposed": []
+    },
+    {
+      "id": "18",
+      "patientId": "2",
+      "date": "2025-09-02",
+      "description": "",
+      "problems": [],
+      "activitiesReviewed": [],
+      "activitiesProposed": []
+    },
+    {
+      "id": "19",
+      "patientId": "3",
+      "date": "2025-08-30",
+      "description": "",
+      "problems": [],
+      "activitiesReviewed": [],
+      "activitiesProposed": []
+    },
+    {
+      "id": "20",
+      "patientId": "4",
+      "date": "2025-08-30",
+      "description": "",
+      "problems": [],
+      "activitiesReviewed": [],
+      "activitiesProposed": []
+    },
+    {
+      "id": "21",
+      "patientId": "5",
+      "date": "2025-08-31",
+      "description": "",
+      "problems": [],
+      "activitiesReviewed": [],
+      "activitiesProposed": []
+    },
+    {
+      "id": "22",
+      "patientId": "6",
+      "date": "2025-08-31",
+      "description": "",
+      "problems": [],
+      "activitiesReviewed": [],
+      "activitiesProposed": []
+    },
+    {
+      "id": "23",
+      "patientId": "7",
+      "date": "2025-09-10",
+      "description": "",
+      "problems": [],
+      "activitiesReviewed": [],
+      "activitiesProposed": []
+    },
+    {
+      "id": "24",
+      "patientId": "8",
+      "date": "2025-09-10",
+      "description": "",
+      "problems": [],
+      "activitiesReviewed": [],
+      "activitiesProposed": []
+    },
+    {
+      "id": "25",
+      "patientId": "9",
+      "date": "2025-09-11",
+      "description": "",
+      "problems": [],
+      "activitiesReviewed": [],
+      "activitiesProposed": []
+    },
+    {
+      "id": "26",
+      "patientId": "10",
+      "date": "2025-09-12",
+      "description": "",
+      "problems": [],
+      "activitiesReviewed": [],
+      "activitiesProposed": []
     }
   ]
 }
